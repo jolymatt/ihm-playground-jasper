@@ -1,0 +1,19 @@
+spring:
+  profiles: test
+
+name: jasper-demo
+
+server:
+  servlet:
+    contextpath: /upreports
+
+logging:
+  level:
+    org:
+      springframework:
+        data= DEBUG:
+
+jasper:
+  rpt:
+    proposalsummarytemplate: src/main/resources/reportsource/up_table_rpt.jrxml
+    generationlocation: src/main/resources/reportsource/
